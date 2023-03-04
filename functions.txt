@@ -1,4 +1,7 @@
+/* add these codes in functions.php */
+
 function add_nav_top_mobile( $content, array $block ) {
+// script not inserted if no class match
   if ( ! has_classname( 'nav-top--mobile', $block )  ) {
     return $content;
   }
